@@ -1,0 +1,106 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: red;
+    font-family: 'DM Serif Text', serif;
+}
+
+.balloon{
+    position: absolute;
+    top: 70vh;
+    left: 10vw;
+    animation-name: move-balloons;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    width: 25%;
+}
+
+.party-blooper{
+    position: absolute;
+    top: 70vh;
+    left: 10vw;
+    animation-name: move-balloons;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    width: 20%;
+}
+
+.text{
+    position: absolute;
+    top: 70vh;
+    left: 10vw;
+    animation-name: move-balloons;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    width: 40%;
+}
+
+.cake{
+    position: absolute;
+    top: 70vh;
+    left: 10vw;
+    animation-name: move-balloons;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    width: 20%;
+}
+
+h1{
+    color: yellow;
+    text-align: center;
+    margin-top: 10vh;
+    transform: rotate(10deg);
+    font-size: 270%;
+}
+
+#name{
+    text-align: center;
+    margin-top: 5vh;
+    transform: rotate(-10deg);
+    font-size: 370%;
+    animation-name: change-color;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.photo{
+    width: 100%;
+    border-radius: 10%;
+    transform: rotate(5deg);
+}
+
+.photo2{
+    width: 100%;
+    border-radius: 10%;
+    transform: rotate(-5deg);
+}
+
+#image-div{
+    margin: auto;
+    margin-top: 10vh;
+}
+
+@keyframes move-balloons{
+    100%{
+        top: -15vh;;
+    }
+}
+
+@keyframes change-color{
+    25%{
+        color: green;
+    }
+    50%{
+        color: orange;
+    }
+    75%{
+        color: blue;
+    }
+    100%{
+        color: yellow;
+    }
+}
